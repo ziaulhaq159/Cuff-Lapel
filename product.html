@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Cuff & Lapel</title>
+  <meta name="description" content="Product detail — Cuff & Lapel" />
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <a class="logo" href="index.html">CUFF & LAPEL</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="checkout.html">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+
+  <main class="container product-page">
+    <div id="productDetail" class="product-detail card">
+      <p>Loading product…</p>
+    </div>
+
+    <aside class="card related" id="relatedProducts">
+      <h4>Related</h4>
+      <div id="relatedGrid" class="grid-small"></div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">CUFF & LAPEL</span>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      await App.renderProductFromQuery('data/products.json', '#productDetail');
+      App.populateRelated('data/products.json', '#relatedGrid');
+      App.updateCartCount('#cart-count');
+    });
+  </script>
+</body>
+</html>

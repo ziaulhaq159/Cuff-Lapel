@@ -1,0 +1,110 @@
+[
+  {
+    "id": "diplomat-blazer",
+    "name": "The Diplomat Blazer",
+    "price": 349,
+    "category": "Blazers",
+    "image": "https://images.unsplash.com/photo-1594938298603-c8148c47e356?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Navy wool blend · Fully canvassed · Hand-finished lapels",
+    "description": "A refined navy blazer with full canvassing, hand-finished lapels and subtle structure for the boardroom. Small-batch, handmade tailoring."
+  },
+  {
+    "id": "statesman-suit",
+    "name": "The Statesman Suit",
+    "price": 799,
+    "category": "Suits",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Charcoal worsted wool · Two-piece · Bespoke fits available",
+    "description": "A classic two-piece suit in fine worsted wool with considered proportions and finishing, ideal for formal occasions and daily leadership wear."
+  },
+  {
+    "id": "signature-white-shirt",
+    "name": "Signature White Shirt",
+    "price": 99,
+    "category": "Shirts",
+    "image": "https://images.unsplash.com/photo-1598554271336-69e1c258074d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "100% Egyptian cotton · Single-needle stitching · Collar options",
+    "description": "Crisp, breathable Egyptian cotton with refined collars and single-needle stitching for a clean silhouette."
+  },
+  {
+    "id": "executive-trousers",
+    "name": "Executive Trousers",
+    "price": 129,
+    "category": "Trousers",
+    "image": "https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Tailored fit · Mercerised finish for durability",
+    "description": "Tailored trousers with a contemporary rise and tapered leg—cut for movement and polish."
+  },
+  {
+    "id": "oxford-belt",
+    "name": "Oxford Belt",
+    "price": 69,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1551028919-ac66e624ecd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Full-grain leather · Hand-stitched · Polished brass buckle",
+    "description": "A timeless full-grain leather belt with hand-stitched edges and a polished brass buckle."
+  },
+  {
+    "id": "heritage-wallet",
+    "name": "Heritage Wallet",
+    "price": 59,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1533117396059-6d1d0b7b3b3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Vegetable-tanned leather · Slim profile · Multiple card slots",
+    "description": "Slim, elegantly finished wallet in vegetable-tanned leather. Ages beautifully with use."
+  },
+  {
+    "id": "signature-tie",
+    "name": "Signature Silk Tie",
+    "price": 59,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1520975918107-9b3b1a0e5f0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Hand-rolled edges · 100% silk",
+    "description": "Hand-rolled silk tie in curated shades to pair with our suits and blazers."
+  },
+  {
+    "id": "linen-summer-blazer",
+    "name": "Linen Summer Blazer",
+    "price": 299,
+    "category": "Blazers",
+    "image": "https://images.unsplash.com/photo-1475180098329-8cc535b31864?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Lightweight linen · Unstructured",
+    "description": "A relaxed, breathable linen blazer for warmer months with unstructured shoulders."
+  },
+  {
+    "id": "travel-suit",
+    "name": "Travel Suit",
+    "price": 399,
+    "category": "Suits",
+    "image": "https://images.unsplash.com/photo-1520975918107-3db0f6c0b6c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Tech-wool blend · Wrinkle-resistant",
+    "description": "A modern suit engineered for travel—breathable, wrinkle-resistant and quick-drying."
+  },
+  {
+    "id": "oxford-shoes",
+    "name": "Handmade Oxford Shoes",
+    "price": 249,
+    "category": "Shoes",
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Goodyear welted · Full-grain leather",
+    "description": "Classic Goodyear welted oxfords with a comfortable last and refined finishing."
+  },
+  {
+    "id": "cashmere-scarf",
+    "name": "Cashmere Scarf",
+    "price": 119,
+    "category": "Accessories",
+    "image": "https://images.unsplash.com/photo-1541348261813-6f4f0a2d6925?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Merino-cashmere blend · Soft touch",
+    "description": "Luxurious scarf knitted in a merino-cashmere blend for cool mornings."
+  },
+  {
+    "id": "cotton-chinos",
+    "name": "Cotton Chinos",
+    "price": 89,
+    "category": "Trousers",
+    "image": "https://images.unsplash.com/photo-1520975918107-5c6c8c4f2f3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+    "excerpt": "Smart-casual chinos · Stretch comfort",
+    "description": "A versatile chino with tailored lines and a comfortable stretch for daily wear."
+  }
+]

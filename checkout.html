@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — Cuff & Lapel (Demo)</title>
+  <meta name="description" content="Sample checkout flow — Cuff & Lapel" />
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <nav class="nav container">
+    <a class="logo" href="index.html">CUFF & LAPEL</a>
+    <div class="nav-links">
+      <a href="index.html#collection">Continue Shopping</a>
+      <a href="index.html#about">About</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="card checkout">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+
+      <div class="cart-summary" id="cartSummary"></div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <h3>Billing</h3>
+        <label>
+          Full name
+          <input name="name" required placeholder="A. Example">
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          Address
+          <input name="address" required placeholder="City, State, Country">
+        </label>
+
+        <div style="margin-top:1rem">
+          <button class="btn primary" id="placeOrder">Place sample order (demo)</button>
+          <button type="button" class="btn ghost" id="demoPay" style="margin-left:8px">Pay (Demo)</button>
+        </div>
+
+        <p class="muted small" style="margin-top:0.8rem">This is a demo checkout — no payment is processed. Clicking "Pay (Demo)" simulates a successful payment.</p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Demo payment modal (simple) -->
+  <div id="demoModal" style="display:none;position:fixed;inset:0;background:rgba(2,6,23,0.6);align-items:center;justify-content:center;z-index:999">
+    <div style="background:white;padding:1.1rem;border-radius:8px;max-width:420px;width:100%;box-shadow:0 10px 40px rgba(2,6,23,0.3)">
+      <h3>Demo Payment</h3>
+      <p class="muted">This simulates a payment flow. No card data is collected or stored.</p>
+      <label style="display:block;margin-top:8px">Card (demo)
+        <input placeholder="4242 4242 4242 4242" style="width:100%;padding:8px;border-radius:6px;border:1px solid #e6eefc">
+      </label>
+      <div style="margin-top:12px;display:flex;justify-content:flex-end;gap:8px">
+        <button id="cancelDemo" class="btn ghost">Cancel</button>
+        <button id="confirmDemo" class="btn primary">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">CUFF & LAPEL</span>
+    </div>
+  </footer>
+
+  <script src="assets/scripts.js" defer></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      App.renderCart('#cartItems', '#cartSummary');
+      App.updateCartCount();
+
+      document.getElementById('checkoutForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        App.clearCart();
+        alert('Thank you — this is a demo. Your sample order was placed.');
+        window.location.href = 'index.html';
+      });
+
+      // Demo pay modal
+      const modal = document.getElementById('demoModal');
+      document.getElementById('demoPay').addEventListener('click', () => modal.style.display = 'flex');
+      document.getElementById('cancelDemo').addEventListener('click', () => modal.style.display = 'none');
+      document.getElementById('confirmDemo').addEventListener('click', () => {
+        modal.style.display = 'none';
+        App.clearCart();
+        alert('Payment simulated (demo). Thank you!');
+        window.location.href = 'index.html';
+      });
+    });
+  </script>
+</body>
+</html>
